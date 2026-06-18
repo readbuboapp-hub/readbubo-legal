@@ -5,59 +5,159 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Readbubo</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 60px auto; padding: 0 24px 60px; color: #1a1a1a; line-height: 1.75; }
     h1 { font-size: 2rem; margin-bottom: 4px; }
-    h2 { font-size: 1.2rem; margin-top: 2rem; }
+    h2 { font-size: 1.15rem; margin-top: 2.2rem; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    h3 { font-size: 1rem; margin-top: 1.2rem; }
     p, li { font-size: 1rem; color: #333; }
+    ul { padding-left: 1.4rem; }
     a { color: #c0563a; }
     .updated { color: #888; font-size: 0.9rem; margin-bottom: 2rem; display: block; }
+    .nav { margin-bottom: 2rem; font-size: 0.9rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+    th { background: #f9f9f9; }
   </style>
 </head>
 <body>
+  <p class="nav"><a href="/">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
   <h1>Privacy Policy</h1>
-  <span class="updated">Last updated: June 12, 2026</span>
+  <span class="updated">Last updated: June 18, 2026</span>
 
-  <p>Readbubo ("we", "our", or "us") is a language learning app that helps you read in a foreign language by providing inline word and phrase translations. This Privacy Policy explains what information we collect, how we use it, and your rights.</p>
+  <p>Readbubo ("we", "us", or "our") is operated by JJ Studios, based in Australia. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use the Readbubo mobile application ("the App"). By using the App, you agree to the collection and use of information in accordance with this policy.</p>
 
-  <h2>1. Information We Collect</h2>
-  <p><strong>Account information:</strong> When you create an account, we collect your email address and password (stored securely via Supabase Auth).</p>
-  <p><strong>Reading content:</strong> Text and EPUB files you import are stored on our servers so you can access them across sessions. Audio files you import for transcription are stored temporarily and count toward your storage limit.</p>
-  <p><strong>Usage data:</strong> We store your reading progress, saved words, flashcard review history, and translation history to provide the core features of the app.</p>
-  <p><strong>Purchase information:</strong> Subscription purchases are processed by Apple. We receive confirmation of your subscription status via RevenueCat but do not store your payment details.</p>
+  <h2>1. Who We Are / Data Controller</h2>
+  <p>The data controller for personal information collected through Readbubo is:</p>
+  <p><strong>JJ Studios</strong><br />
+  Australia<br />
+  Contact: <a href="mailto:readbuboapp@gmail.com">readbuboapp@gmail.com</a></p>
+  <p>For residents of the European Economic Area (EEA) or United Kingdom, JJ Studios is the data controller under the General Data Protection Regulation (GDPR) and UK GDPR respectively.</p>
 
-  <h2>2. How We Use Your Information</h2>
+  <h2>2. Information We Collect</h2>
+
+  <h3>2.1 Account Information</h3>
+  <p>When you create an account, we collect your email address and a securely hashed password. If you sign in with Apple or Google, we receive only your name and email address from those providers — we never receive or store your Apple or Google password.</p>
+
+  <h3>2.2 Profile Information</h3>
+  <p>Your chosen display name, selected learning language, and dictionary language preference.</p>
+
+  <h3>2.3 Content You Import</h3>
+  <p>Text files, EPUB files, and audio files you import into the App are stored on our servers so you can access them across sessions. <strong>You are solely responsible for ensuring you have the right to import and use any content.</strong> We do not review or screen imported content.</p>
+
+  <h3>2.4 Learning & Usage Data</h3>
+  <p>Reading progress, saved vocabulary, flashcard review history, translation history, and daily activity data. This data is the core of the service and is necessary to provide it.</p>
+
+  <h3>2.5 Translation Requests</h3>
+  <p>When you tap a word or phrase for translation, that text is sent to DeepL or Google Translate APIs to generate the translation. We do not store your translation requests beyond what is cached in your word list.</p>
+
+  <h3>2.6 Audio Transcription</h3>
+  <p>If you use the audio import feature, your audio file is sent to Groq's Whisper API for transcription. The transcribed text is then stored in your account. Audio files count toward your storage limit and are deleted when you remove the import or delete your account.</p>
+
+  <h3>2.7 Subscription Information</h3>
+  <p>Subscription purchases are processed by Apple (via the App Store). We receive your subscription status (active, expired, cancelled) via RevenueCat. We do not receive or store your payment card details.</p>
+
+  <h3>2.8 Technical Data</h3>
+  <p>Device type, operating system version, and app version, collected automatically to ensure compatibility and fix bugs. We do not use persistent advertising identifiers.</p>
+
+  <h2>3. How We Use Your Information and Our Lawful Basis</h2>
+
+  <table>
+    <tr><th>Purpose</th><th>Data Used</th><th>Lawful Basis (GDPR)</th></tr>
+    <tr><td>Provide the core app features (reading, translation, flashcards)</td><td>All learning &amp; usage data</td><td>Performance of contract</td></tr>
+    <tr><td>Authenticate you and secure your account</td><td>Email, password hash, OAuth tokens</td><td>Performance of contract</td></tr>
+    <tr><td>Process and manage your subscription</td><td>Subscription status via RevenueCat</td><td>Performance of contract</td></tr>
+    <tr><td>Transcribe audio imports</td><td>Audio file content</td><td>Performance of contract</td></tr>
+    <tr><td>Translate words and phrases</td><td>Selected text snippets</td><td>Performance of contract</td></tr>
+    <tr><td>Improve the App (analytics on feature usage)</td><td>Aggregated, non-identifiable usage data</td><td>Legitimate interests</td></tr>
+    <tr><td>Comply with legal obligations</td><td>As required by law</td><td>Legal obligation</td></tr>
+  </table>
+
+  <p>We do not sell your personal data. We do not use your data for advertising.</p>
+
+  <h2>4. Third-Party Services and Data Processors</h2>
+  <p>We use the following third-party services. Each processes data only as necessary to provide the relevant function:</p>
+
+  <table>
+    <tr><th>Provider</th><th>Purpose</th><th>Data Sent</th><th>Location</th></tr>
+    <tr><td><a href="https://supabase.com/privacy" target="_blank">Supabase</a></td><td>Database, authentication, file storage</td><td>All account and learning data</td><td>United States (AWS us-east-1)</td></tr>
+    <tr><td><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a></td><td>Subscription management</td><td>Anonymous user ID, subscription events</td><td>United States</td></tr>
+    <tr><td><a href="https://www.deepl.com/privacy" target="_blank">DeepL</a></td><td>Word and phrase translation</td><td>Selected text snippet</td><td>European Union (Germany)</td></tr>
+    <tr><td><a href="https://policies.google.com/privacy" target="_blank">Google Translate</a></td><td>Word and phrase translation (fallback)</td><td>Selected text snippet</td><td>United States</td></tr>
+    <tr><td><a href="https://groq.com/privacy-policy/" target="_blank">Groq (Whisper)</a></td><td>Audio transcription</td><td>Audio file</td><td>United States</td></tr>
+    <tr><td><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple</a></td><td>In-app payments, Sign in with Apple</td><td>Purchase events, Apple ID token</td><td>United States</td></tr>
+    <tr><td><a href="https://policies.google.com/privacy" target="_blank">Google</a></td><td>Sign in with Google (optional)</td><td>Name, email address</td><td>United States</td></tr>
+  </table>
+
+  <p>All third-party processors are bound by data processing agreements and applicable privacy law.</p>
+
+  <h2>5. International Data Transfers</h2>
+  <p>Our primary infrastructure (Supabase) stores data in the United States. For users in the EEA, UK, or other jurisdictions with data transfer restrictions, such transfers are made pursuant to Standard Contractual Clauses (SCCs) approved by the European Commission, or equivalent safeguards required by applicable law. By using the App, you acknowledge that your data may be transferred to and processed in the United States and other countries.</p>
+
+  <h2>6. Data Retention</h2>
   <ul>
-    <li>To provide and improve the Readbubo service</li>
-    <li>To sync your reading progress and vocabulary across devices</li>
-    <li>To process and manage your subscription</li>
-    <li>To transcribe audio files you upload (processed via Groq's Whisper API)</li>
-    <li>To translate words and phrases (processed via DeepL and Google Translate APIs)</li>
+    <li><strong>Active accounts:</strong> We retain your data for as long as your account is active and the service is in use.</li>
+    <li><strong>Account deletion:</strong> When you delete your account through the App, your personal data (account info, saved words, reading progress, flashcard data, activity history, and private imported texts) is permanently deleted from our systems. Audio files stored in our file storage are deleted immediately. Deletion is complete within 30 days.</li>
+    <li><strong>Shared/public content:</strong> If you have published content to the shared Discover library, that content may be retained with the author attribution removed (your user ID is set to null). You may request full removal by contacting us.</li>
+    <li><strong>Legal holds:</strong> We may retain certain data where required by law or to resolve disputes.</li>
+    <li><strong>Translation requests:</strong> Text snippets sent to DeepL or Google Translate are not retained by us beyond your saved word list. Each provider's own retention policy governs data on their servers.</li>
   </ul>
 
-  <h2>3. Third-Party Services</h2>
-  <p>We use the following third-party services to operate the app:</p>
+  <h2>7. Your Rights</h2>
+
+  <h3>7.1 All Users</h3>
   <ul>
-    <li><strong>Supabase</strong> — database and authentication</li>
-    <li><strong>RevenueCat</strong> — subscription management</li>
-    <li><strong>DeepL</strong> — word and phrase translation</li>
-    <li><strong>Google Translate</strong> — word and phrase translation</li>
-    <li><strong>Groq (Whisper)</strong> — audio transcription</li>
+    <li><strong>Access and correction:</strong> You can view and update your profile information within the App at any time.</li>
+    <li><strong>Account deletion:</strong> You can delete your account from Settings → Delete Account. This permanently erases all your data.</li>
+    <li><strong>Data export:</strong> You can export your vocabulary list as a CSV file from the Wordlist screen.</li>
   </ul>
-  <p>Each of these services has their own privacy policy governing their use of data.</p>
 
-  <h2>4. Data Retention</h2>
-  <p>Your account data is retained for as long as your account is active. If you delete your account, your data is deleted from our systems within 30 days. Audio files are deleted when you delete the associated import.</p>
+  <h3>7.2 EEA and UK Residents (GDPR / UK GDPR)</h3>
+  <p>You have the right to:</p>
+  <ul>
+    <li><strong>Access</strong> your personal data (Article 15)</li>
+    <li><strong>Rectify</strong> inaccurate data (Article 16)</li>
+    <li><strong>Erasure</strong> ("right to be forgotten") (Article 17) — exercise via the in-app Delete Account feature</li>
+    <li><strong>Restriction</strong> of processing (Article 18)</li>
+    <li><strong>Data portability</strong> (Article 20) — vocabulary export is available; for full data portability requests contact us</li>
+    <li><strong>Object</strong> to processing based on legitimate interests (Article 21)</li>
+    <li><strong>Withdraw consent</strong> at any time where processing is based on consent</li>
+    <li><strong>Lodge a complaint</strong> with your national data protection supervisory authority</li>
+  </ul>
+  <p>To exercise any of these rights, contact us at <a href="mailto:readbuboapp@gmail.com">readbuboapp@gmail.com</a>. We will respond within 30 days.</p>
 
-  <h2>5. Your Rights</h2>
-  <p>You may request access to, correction of, or deletion of your personal data at any time by contacting us at the email below. You can also delete your account directly from the app.</p>
+  <h3>7.3 California Residents (CCPA / CPRA)</h3>
+  <p>California residents have the right to:</p>
+  <ul>
+    <li><strong>Know</strong> what personal information we collect, use, and disclose</li>
+    <li><strong>Delete</strong> personal information (exercise via in-app Delete Account)</li>
+    <li><strong>Correct</strong> inaccurate personal information</li>
+    <li><strong>Opt out of sale or sharing</strong> — we do not sell or share your personal information for advertising purposes</li>
+    <li><strong>Non-discrimination</strong> for exercising your rights</li>
+  </ul>
+  <p>To exercise these rights, contact us at <a href="mailto:readbuboapp@gmail.com">readbuboapp@gmail.com</a>.</p>
 
-  <h2>6. Children's Privacy</h2>
-  <p>Readbubo is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+  <h3>7.4 Australian Residents (Privacy Act 1988)</h3>
+  <p>Under the Australian Privacy Act 1988 and the Australian Privacy Principles (APPs), you have the right to access and correct the personal information we hold about you, and to make a complaint if you believe we have handled your information incorrectly. Contact us at <a href="mailto:readbuboapp@gmail.com">readbuboapp@gmail.com</a>. If you are not satisfied with our response, you may contact the Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au" target="_blank">oaic.gov.au</a>.</p>
 
-  <h2>7. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the date at the top of this page.</p>
+  <h2>8. Security</h2>
+  <p>We implement industry-standard security measures including:</p>
+  <ul>
+    <li>All data in transit is encrypted via TLS/HTTPS</li>
+    <li>Passwords are hashed using bcrypt via Supabase Auth — we never store plaintext passwords</li>
+    <li>Row-Level Security (RLS) policies on our database ensure each user can only access their own data</li>
+    <li>API keys and secrets are stored in environment variables, never in app code</li>
+  </ul>
+  <p>No method of transmission or storage is 100% secure. If you believe your account has been compromised, contact us immediately at <a href="mailto:readbuboapp@gmail.com">readbuboapp@gmail.com</a>.</p>
 
-  <h2>8. Contact Us</h2>
-  <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:readbuboapp@gmail.com">readbuboapp@gmail.com</a></p>
+  <h2>9. Children's Privacy</h2>
+  <p>Readbubo is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected data from a child under 13, we will delete it promptly. If you believe a child under 13 has created an account, contact us at <a href="mailto:readbuboapp@gmail.com">readbuboapp@gmail.com</a>.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Significant changes will be notified by updating the date at the top of this page. Continued use of the App after any changes constitutes acceptance of the updated policy. We encourage you to review this policy periodically.</p>
+
+  <h2>11. Contact Us</h2>
+  <p>For any questions, requests, or complaints regarding this Privacy Policy or our data practices:</p>
+  <p><strong>Email:</strong> <a href="mailto:readbuboapp@gmail.com">readbuboapp@gmail.com</a></p>
+  <p>We aim to respond to all enquiries within 30 days.</p>
 </body>
 </html>
